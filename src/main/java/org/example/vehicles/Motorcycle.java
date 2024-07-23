@@ -18,10 +18,12 @@ public class Motorcycle extends Vehicle {
             case "Unleaded" -> 1.5D;
             case "Leaded" -> 1.2D;
             case "Diesel" -> 1.8D;
+            case "Hybrid" -> 2.0D;
+            case "Petrol" -> 1.4D;
             default -> throw new IllegalStateException("Unexpected value: " + this.engine.fuelType);
         };
         for (int i = 0 ; i < 10 ; i++) {
-            System.out.println(message + String.format("%.2f", ((engine.horsePower * fuelMod) * Math.exp(Math.sqrt(i)) / 2)* (hasSidecar ? 0.8 : 1.0)));
+            System.out.println(message + String.format("%.2f", ((engine.horsePower * fuelMod) * (Math.sqrt(i)) / 4)* (hasSidecar ? 0.8 : 1.0)));
         }
     }
 

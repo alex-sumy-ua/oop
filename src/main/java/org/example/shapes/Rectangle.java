@@ -8,11 +8,11 @@ public class Rectangle extends Shape {
     public Rectangle(double length, double width) {
         this.length = length;
         this.width = width;
+        this.shape = "Rectangle";
     }
 
     @Override
     public double calculateArea() {
-//        System.out.println("The area of the rectangle with length = " + length + " and  width = " + width + " : " + length * width);;
         return length * width;
     }
 

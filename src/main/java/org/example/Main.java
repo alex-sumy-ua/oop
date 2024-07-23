@@ -3,6 +3,7 @@ package org.example;
 import org.example.shapes.*;
 import java.util.ArrayList;
 import java.util.List;
+import org.example.vehicles.*;
 
 public class Main {
 
@@ -10,24 +11,40 @@ public class Main {
 
         // First part of the Sprint
 
-/*
-        Car myCar = new Car("Toyota", "Prado", false, 160, "Diesel" );
+
+        Car myCar = new Car("Toyota", "Prado", false, 160, "Hybrid" );
         myCar.start();
         myCar.drive();
         myCar.accelerate();
+
+        Car myCar2 = new Car("Honda", "SR-V", false, 170, "Hybrid" , new Circle(2000));
+        myCar2.start();
+        myCar2.drive();
+        myCar2.accelerate();
+
+        Car myCar3 = new Car("Tesla", "Model-Z", false, 250, "Electric" , new Star(2000, 800));
+        myCar3.start();
+        myCar3.drive();
+        myCar3.accelerate();
 
         Motorcycle myMotorcycle = new Motorcycle("Suzuki", "SomeModel", false, 220, "Petrol", false);
         myMotorcycle.start();
         myMotorcycle.drive();
         myMotorcycle.accelerate();
-*/
+
+        Plane myPlane = new Plane("Junkers", "JF-45", false, 210, "Unleaded", 5000 );
+        myPlane.start();
+        myPlane.drive();
+        myPlane.accelerate();
+
+
 //**********************************************************
 
         // Second part of the Sprint
 
         // 2.1
 
-        List<Shape> shapes = List.of(
+/*        List<Shape> shapes = List.of(
                 new Circle(5),
                 new Rectangle(2, 5),
                 new Triangle(3, 7)
@@ -61,7 +78,7 @@ public class Main {
                     shape3d.getBase().getClass().getSimpleName() + " base | Volume = " +
                     shape3d.calculateVolume());
         }
-
+*/
     }
 
 }

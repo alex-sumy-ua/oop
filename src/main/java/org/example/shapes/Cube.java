@@ -1,6 +1,6 @@
 package org.example.shapes;
 
-public class Cube extends Shape3D{
+public class Cube extends Shape3D {
     double size;
 
     private Cube(double size, Shape base) {

@@ -2,7 +2,7 @@ package org.example.vehicles;
 
 public class Motorcycle extends Vehicle {
 
-    boolean hasSidecar;
+    protected boolean hasSidecar;
 
     public Motorcycle(String make, String model, boolean running,
                       int horsePower, String fuelType, boolean hasSidecar) {

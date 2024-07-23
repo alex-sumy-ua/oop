@@ -4,15 +4,15 @@ public class Car extends Vehicle {
 
     boolean hasSidecar;
 
-    protected Car(String make, String model, boolean running,
-                      int horsePower, String fuelType) {
+    public Car(String make, String model, boolean running,
+               int horsePower, String fuelType) {
         super(make, model);
         this.engine = new CarEngine(running, horsePower, fuelType);
 
     }
 
     @Override
-    protected void accelerate() {
+    public void accelerate() {
         String message = make + " " + model + " speed: ";
         double fuelMod = switch (this.engine.fuelType) {
             case "Unleaded" -> 1.5D;

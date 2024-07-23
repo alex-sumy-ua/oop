@@ -7,7 +7,7 @@ public class CarEngine extends Engine {
 
         super(running, horsePower, fuelType);
         this.running = true;
-        this.horsePower = 120;
+        this.horsePower = 20;
         this.fuelType = "Diesel";
 
     }

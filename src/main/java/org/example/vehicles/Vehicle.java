@@ -17,7 +17,11 @@ public abstract class Vehicle {
     }
 
     public void drive() {
-
+        if (engine.running){
+           accelerate();
+        } else {
+            System.out.println(make + " " + model + " is not running.");
+        }
     }
 
     protected abstract void accelerate();

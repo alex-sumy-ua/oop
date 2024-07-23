@@ -7,14 +7,13 @@ public class Sphere extends Shape3D {
     }
 
     @Override
-    double calculateVolume() {
-        return 0;
+    public double calculateVolume() {
+        return base.calculateArea() * Math.sqrt(base.calculateArea() / Math.PI) * 4 / 3;
     }
 
     @Override
     public Shape getBase() {
         return super.getBase();
     }
-
 
 }

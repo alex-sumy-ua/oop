@@ -16,5 +16,4 @@ public class Triangle extends Shape {
         return base * height / 2;
     }
 
-
 }

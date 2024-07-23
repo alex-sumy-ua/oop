@@ -24,4 +24,5 @@ public class Car extends Vehicle {
             System.out.println(message + String.format("%.2f", (engine.horsePower * fuelMod) * Math.exp(Math.sqrt(i)) / 2));
         }
     }
+
 }

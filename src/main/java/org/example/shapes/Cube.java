@@ -1,23 +1,25 @@
 package org.example.shapes;
 
 public class Cube extends Shape3D{
-
     double size;
 
+    private Cube(double size, Shape base) {
+        this.size = size;
+        this.base = base;
+    }
 
-    public Cube (double size) {
-      this.size = size;
+    public Cube(double size) {
+        this(size, new Rectangle(size, size));
     }
 
     @Override
-    double calculateVolume() {
-        return 0;
+    public double calculateVolume() {
+        return size * size * size;
     }
 
     @Override
     public Shape getBase() {
-        return super.getBase();
+        return base;
     }
-
 
 }

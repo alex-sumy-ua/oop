@@ -3,7 +3,7 @@ package org.example.vehicles;
 public class CarEngine extends Engine {
 
 
-    public CarEngine(boolean running, int horsePower, String fuelType) {
+    protected CarEngine(boolean running, int horsePower, String fuelType) {
 
         super(running, horsePower, fuelType);
         this.running = true;

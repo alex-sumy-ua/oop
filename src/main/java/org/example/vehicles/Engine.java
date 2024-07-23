@@ -8,7 +8,7 @@ public class Engine {
 
     String fuelType;
 
-    public Engine(boolean running, int horsePower, String fuelType) {
+    protected Engine(boolean running, int horsePower, String fuelType) {
         this.running = running;
         this.horsePower = horsePower;
         this.fuelType = fuelType;

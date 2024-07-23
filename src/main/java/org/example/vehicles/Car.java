@@ -21,7 +21,7 @@ public class Car extends Vehicle {
             default -> throw new IllegalStateException("Unexpected value: " + this.engine.fuelType);
         };
         for (int i = 0 ; i < 10 ; i++) {
-            System.out.println(message + String.format("%.2f", (engine.horsepower * fuelMod) * Math.exp(Math.sqrt(i)) / 2));
+            System.out.println(message + String.format("%.2f", (engine.horsePower * fuelMod) * Math.exp(Math.sqrt(i)) / 2));
         }
     }
 }
